@@ -1,0 +1,11 @@
+Use JQuery to update the wp-pagenavi links with a common anchor.
+
+<script>
+(function($) {
+$(document).ready( function() {
+     $('.previouspostslink, .page, .last, .nextpostslink').each( function(i,a) {
+         $(a).attr('href',$(a).attr('href')+'#roster');
+     });
+});
+})(jQuery);
+</script>
